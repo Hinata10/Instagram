@@ -150,8 +150,8 @@
 				AC072D2A22DDE25100F8809C /* Const.swift */,
 				AC072D2C22DDE99500F8809C /* PostData.swift */,
 				AC072D2E22DDEA4000F8809C /* PostTableViewCell.swift */,
-				AC072D2F22DDEA4000F8809C /* PostTableViewCell.xib */,
 				AC063AD022DF091C00C6BC58 /* CommentViewController.swift */,
+				AC072D2F22DDEA4000F8809C /* PostTableViewCell.xib */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";

@@ -34,11 +34,15 @@ class PostTableViewCell: UITableViewCell {
         let likeNumber = postData.likes.count
         likeLabel.text = "\(likeNumber)"
         
-//        let commentText = postData.comments
-//        commentLabel.text = "\(commentText)"
-//        postData.commentName = "コメント"
-        self.commentLabel.text = ("\(postData.comments)")
-//        : \(postData.commentName!)"
+        //コメントを一つずつラベルに表示
+//        let comment: [String] = postData.comments
+        var commentArray: String = ""
+        for comment in postData.comments {
+            commentArray += "\(comment)\n"
+//            print(commentArray)
+//            commentLabel.text = ("\n\(comment)\n")
+        }
+        commentLabel.text = ("\(commentArray)")
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
@@ -53,8 +57,5 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
         
-//        if postData.isCommented {
-//
-//        }
     }
 }
