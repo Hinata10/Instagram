@@ -151,21 +151,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         let commentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment")as! CommentViewController
         commentViewController.postData = postData
         self.present(commentViewController, animated: true, completion: nil)
-        
-            //Firebaseに保存するデータの準備
-//        if let uid = Auth.auth().currentUser?.uid {
-//            if postData.isCommented {
-//                postData.comments.append(uid)
-//            }
-//        }
-            // 増えたcommentsをFirebaseに保存する
-        
-        
         }
     }
-//        func setPostData(_ postData: PostData) {
-//            self.commentLabel.text = "\(postData.name!) : \(postData.comment!)"
-//    }
     /*
     // MARK: - Navigation
 
