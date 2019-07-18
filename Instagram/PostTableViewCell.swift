@@ -35,7 +35,6 @@ class PostTableViewCell: UITableViewCell {
         likeLabel.text = "\(likeNumber)"
         
         //コメントを一つずつラベルに表示
-//        let comment: [String] = postData.comments
         var commentArray: String = ""
         for comment in postData.comments {
             commentArray += "\(comment)\n"
